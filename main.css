@@ -131,3 +131,14 @@ select option {
 p.text span {
     color: #6feaf6
 }
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--alpha);
+    font-weight: bolder;
+}
