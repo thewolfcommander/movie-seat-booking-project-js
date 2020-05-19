@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #242333;
+    --alpha: #134E5E;
+    --beta: #71B280;
+    --gamma: #d4d9d1;
+    --white: #f2f2f2;
+}
+
+html, body {
+    background: var(--primary);
+    color: var(--white);
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.movie-container {
+    width: 80vw;
+    height: 10vh;
+    text-align: center;
+}
+
+.movie-container label {
+    font-size: 16px;
+}
+
+.movie-container select {
+    width: 200px;
+    height: 30px;
+    background-color: var(--beta);
+    border: none;
+    color: var(--white);
+    padding: 7px 15px;
+    margin: 10px 0;
+}
+
+
+
+select option {
+    background-color: var(--alpha);
+    border: none;
+    color: var(--white);
+    padding: 7px 15px;
+}
+
+
+ul {
+    list-style: none;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.seat {
+    background: var(--gamma);
+    height: 20px;
+    width: 23px;
+    border-radius: 10px 10px 0 0;
+    margin: 4px;
+}
+
+.seat.selected {
+    background-color: var(--beta);
+}
+
+.seat.occupied {
+    background-color: var(--alpha);
+}
+
+.container {
+    margin: 20px 0;
+}
+
+.row {
+    display: flex;
+}
